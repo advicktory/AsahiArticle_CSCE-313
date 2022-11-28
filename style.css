@@ -1,0 +1,42 @@
+/*Is this a comment?*/
+h2 {
+    color: blueviolet;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 60%;
+    margin: auto;
+    padding: 4px 6px;
+    border: 12px double;
+    border-color:rgb(96, 96, 96);
+    display: block;
+}
+
+.block {
+    width:80%;
+    height:auto;
+    margin:auto;
+    border: 25px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 24px 36px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+.block p {
+    margin: auto;
+    width: 85%;
+    padding: 10px 10px 10px 10px;
+}
