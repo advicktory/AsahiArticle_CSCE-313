@@ -17,7 +17,9 @@
         This inhibits hobbyists, such as the team over at Asahi, to express their creativity. As many hobbyists have come 
         to find out though, cracking this end-to-end control is part of the fun. From jailbreaking iPhones to installing a 
         completely separate operating system not intended for the device, it seems as if Developers and Hardware hobbyists 
-        enjoy the challenge and the prestige that comes from using Apple’s hardware in unintended ways. To highlight the power of 
+        enjoy the challenge and the prestige that comes from using Apple’s hardware in unintended ways. Thus, Asahi Linux brings a lot to the
+        table as few believed a Linux port of this degree was even possible on a Mac device without going through Apple directly as Apple Silicon
+        has no documentation and thus the the Apple GPU architecture had to be completely reverse engineered. To highlight the power of 
         Apple’s hardware and the versatility of Linux, the remainder of this article will be dedicated to the installation of Asahi 
         Linux, the hurdles of the process, and the experiences of myself using the alternative OS and the experiences of others. 
     </p>
@@ -27,13 +29,15 @@
         <p>
             I would like to focus on the installation experience for a moment. Navigating to the Asahi Linux website, asahilinux.org, 
             you will be greeted with a bunch of information about the project. There is some general information about the project: 
-            Where the name comes from, is this legal, some of their developers, their social media, etc. The installation material can 
+            Where the name comes from, is this legal, some of their developers, their social media, etc. Through navigating this site you can learn
+            a lot about the team and the reason for the project as well as how you can support them and where you can learn more information and stay involved
+            with all the happenings of the projects and the team members themselves. Furthermore, the installation material can 
             be found in a blog post in the middle of the page. Once there, a provided ‘curl’ command provides the necessary information 
             to get started. 
         </p>
         <img src="./asahi/pic1.png" alt="Asahi Alpha Release Main Page">
         <p>
-            Minimal hardware requirements, different options for installation, what works and doesn’t work, and some known bugs. 
+            Minimal hardware requirements, different options for installation, what works and does not work, and some known bugs. 
             Finishing off with some references to any other questions that could arise. For this tutorial, I will be using the ‘macOS’ terminal. 
             Further, on this machine, I have a 512GB Harddrive, 32GBs or RAM, an M1 Pro Chip, and macOS Ventura (13.0.1). Note that macOS 12.3 is 
             required for this process.
@@ -78,7 +82,7 @@
             In the previous step, the computer created a new partition to install the distro. Now, in that new partition, the installer will install the 
             distro. The installer will now ask how much space you are willing to give the distro so it can function. The recommended minimum is 15 GBs, 
             however, I gave it 75GBs just to be safe. Also, it will ask if you would like to install ‘Arch Minimal’ or Arch Desktop. For simplicity, I 
-            choose to have a working desktop environment so I wouldn’t have to deal with the arch installation process.
+            choose to have a working desktop environment so I would not have to deal with the arch installation process.
         </p>
         <img src="./asahi/Screenshot 2022-11-23 at 8.28.06 PM.png" alt="">
         <img src="./asahi/Screenshot 2022-11-23 at 8.28.53 PM.png" alt="">
@@ -130,7 +134,7 @@
 
     <div class="block">
         <h3>The Aftermath</h3>
-        <p>I have been a windows user for about as long as I can remember. I grew up with Vista and 7, eventually making my way to 10 when it came out. 
+        <p>I have been a Windows user for about as long as I can remember. I grew up with Vista and 7, eventually making my way to 10 when it came out. 
             I would play games, do school projects, etc on a windows machine. Windows, to me, has always been a safety net to learning about computers. 
             You can always do whatever need to do, on a windows machine. I never really had a family member who had, or used a Apple machine. There was a 
             hort amount of time when my family had a Apple Mini computer, but that was quickly thrown out for just being a terrible computer. I know how to use 
@@ -145,20 +149,20 @@
             it a pain. Lesson learned.
             <br><br>
             Next, I needed to install macOS again. This is where the problems started to arise. Remember a couple of steps back where we partitioned the 
-            harddrive so we could a blank space to install Asahi? I couldn’t get ride of it. I tried EVERYTHING, and NOTHING worked. I was able to get the 
+            harddrive so we could a blank space to install Asahi? I could not get ride of it. I tried EVERYTHING, and NOTHING worked. I was able to get the 
             distro uninstalled effortlessly. I just selected the volume it was on and deleted it, it was getting ride of the almost 300GBs partition I was 
             having problems with. Even whipping the harddrive completely, withever thing on it mind you was not enough to remedy the situation. Luckily while 
             I was doing this project, I was in Dallas and able to get to an Apple Store to visit the Genius bar. By dumb luck, I have Apple Care on this device 
             and had the firmware reset. Thats right, this entire process gave me a new computer at the low cost of my anxiety spiking. 
             <br><br>
-            I personally believe that this could have been a lot easier to fix if it wasn’t for Apple’s ‘end-to-end’ policy. To many who will read this article, 
-            it is well know that Apple doesn’t like the average joe messing around with their hardware. They have gotten better at it in recent years by allowing 
-            more people to be ‘authorized’ to service their devices, but it’s a long shot from where they need to be. Asahi Linux is having to reverse engineer 
+            I personally believe that this could have been a lot easier to fix if it was not for Apple’s ‘end-to-end’ policy. To many who will read this article, 
+            it is well know that Apple does not like the average joe messing around with their hardware. They have gotten better at it in recent years by allowing 
+            more people to be ‘authorized’ to service their devices, but it is a long shot from where they need to be. Asahi Linux is having to reverse engineer 
             their way through this project because there are no open source drivers or documentation for their product on a hobbyiest level. Maybe in due time 
             Apple will release this information to the public and allow us to use the machines we bought how we like rather than how they like, but alas, we will 
-            have to wait and see. For now, Asahi Linux works, but is still in alpha stages; My laptop is back to how it’s supposed to be, minus a few programs; And 
+            have to wait and see. For now, Asahi Linux works, but is still in alpha stages; My laptop is back to how it is supposed to be, minus a few programs; And 
             no crucial data was lost. Over all I would call this a win. I had a fun time installing this distro and checking it out, the team did an amazing team job 
-            given their limitations and I can’t wait to see how this turns out in the future. 
+            given their limitations and I can not wait to see how this turns out in the future. 
         </p>
         <h3>Other Asahi Users experiences</h3>
         <p>
