@@ -8,33 +8,51 @@
     </head>
     <!-- Caleb's Part -->
     <h2>About Asahi Linux</h2>
-    <p>
-        Asahi Linux is a project created for the Linux operating system to be ported on Apple Silicon Macs. The project was started in December of 2020 by Hector Martin after Apple announced their transition to Apple custom Silicon in their computers. The name Asahi translates to “rising sun” in Japanese, and is also the name of the same variety of apple that gave Macintosh its name. Asahi is considered a community, and is an open source project available for anybody to make contributions. The main major contributors for the project include Hector Martin as the project lead, Alyssa Rosenzweig as the GPU lead, Asahi Lina as the GPU kernel specialist, Dougall Johnson as the instruction set architecture specialist, Sven Peter as a Linux support developer, and Mark Kettenis as a OpenBSD developer.
-    </p>
-    <p>
-        Martin secured funding of $4,000 per month after Linux founder Linus Torvalds showed interest in using an Apple M1 mac if it was able to run with his operating system. The project’s first goal targeted the M1 Mac Mini. The process to boot the Linux kernel on an Apple Silicon processor proved to be a challenge, as the developers on the project needed to figure out how Apple code functioned during the boot process. This required working with Linux kernel developers, which included constantly submitting pull requests to Linux kernel devs in order to keep development in sync. This process took nearly a year, and the final result was a fully documented explanation of the boot process, which was published to Asahi’s Github repository. Addressing concerns of legality and Apple’s allowingness, Asahi has stated no code has been taken from macOS to develop Linux support. Apple actually has a built-in feature for Apple Silicon Macs that allows booting unsigned or custom kernels without any jailbreaking. Unlike Apple’s mobile device operating system, they have no plans on locking the OS, which would otherwise require a jailbreak.
-    </p>
-    <p>    
-        The first alpha version of an installer for Asahi Linux was released early this year, on March 18, 2022. This experimental edition of the installer offers options of an Arch Linux ARM-based environment or a simple UEFI environment for installing OpenBSD or other Linux distributions with Apple Silicon support. The latter option enables users to install an operating system via a bootable USB drive, but does not support Microsoft Windows as it would require work in dissecting Windows kernel. While full support for every Apple Silicon Mac product is not expected for a while, Asahi released an update in July 2022 that added support for Apple’s M1 Ultra, Mac Studio, and M2 Macbook Pro. Other than that, installation requires 53 gigabytes of free space and macOS 12.3 or later. The complete process on how to install this release on your Apple Silicon Mac device can be found later in this article. 
-    </p>
-
-    <!-- Jack's Part-->
-
+    <div class="block">
+        <p>
+            Asahi Linux is a project created for the Linux operating system to be ported on Apple Silicon Macs. The project was started in December of 2020 
+            by Hector Martin after Apple announced their transition to Apple custom Silicon in their computers. The name Asahi translates to “rising sun” in 
+            Japanese, and is also the name of the same variety of apple that gave Macintosh its name. Asahi is considered a community, and is an open source
+            project available for anybody to make contributions. The main major contributors for the project include Hector Martin as the project lead, Alyssa 
+            Rosenzweig as the GPU lead, Asahi Lina as the GPU kernel specialist, Dougall Johnson as the instruction set architecture specialist, Sven Peter as a 
+            Linux support developer, and Mark Kettenis as a OpenBSD developer.
+        </p>
+        <p>
+            Martin secured funding of $4,000 per month after Linux founder Linus Torvalds showed interest in using an Apple M1 mac if it was able to run with 
+            his operating system. The project’s first goal targeted the M1 Mac Mini. The process to boot the Linux kernel on an Apple Silicon processor proved 
+            to be a challenge, as the developers on the project needed to figure out how Apple code functioned during the boot process. This required working 
+            with Linux kernel developers, which included constantly submitting pull requests to Linux kernel devs in order to keep development in sync. This 
+            process took nearly a year, and the final result was a fully documented explanation of the boot process, which was published to Asahi’s Github repository. 
+            Addressing concerns of legality and Apple’s allowingness, Asahi has stated no code has been taken from macOS to develop Linux support. Apple actually has a 
+            built-in feature for Apple Silicon Macs that allows booting unsigned or custom kernels without any jailbreaking. Unlike Apple’s mobile device operating system, 
+            they have no plans on locking the OS, which would otherwise require a jailbreak.
+        </p>
+        <p>    
+            The first alpha version of an installer for Asahi Linux was released early this year, on March 18, 2022. This experimental edition of the installer offers 
+            options of an Arch Linux ARM-based environment or a simple UEFI environment for installing OpenBSD or other Linux distributions with Apple Silicon support. 
+            The latter option enables users to install an operating system via a bootable USB drive, but does not support Microsoft Windows as it would require work in 
+            dissecting Windows kernel. While full support for every Apple Silicon Mac product is not expected for a while, Asahi released an update in July 2022 that added 
+            support for Apple’s M1 Ultra, Mac Studio, and M2 Macbook Pro. Other than that, installation requires 53 gigabytes of free space and macOS 12.3 or later. The complete 
+            process on how to install this release on your Apple Silicon Mac device can be found later in this article. 
+        </p>
+    </div>
     <!-- Adam's Part-->
     <h2>The Tour</h2>
-    <p>
-        Up to this point, the challenges of running this operating system on this type of hardware should 
-        have been made apparent. Under the guidance of Steve Jobs, Apple's ecosystem has ‘end-to-end’ control (1). 
-        This inhibits hobbyists, such as the team over at Asahi, to express their creativity. As many hobbyists have come 
-        to find out though, cracking this end-to-end control is part of the fun. From jailbreaking iPhones to installing a 
-        completely separate operating system not intended for the device, it seems as if Developers and Hardware hobbyists 
-        enjoy the challenge and the prestige that comes from using Apple’s hardware in unintended ways. Thus, Asahi Linux brings a lot to the
-        table as few believed a Linux port of this degree was even possible on a Mac device without going through Apple directly as Apple Silicon
-        has no documentation and thus the the Apple GPU architecture had to be completely reverse engineered. To highlight the power of 
-        Apple’s hardware and the versatility of Linux, the remainder of this article will be dedicated to the installation of Asahi 
-        Linux, the hurdles of the process, and the experiences of myself using the alternative OS and the experiences of others. 
-    </p>
-
+    <div class="block">
+        <p>
+            Up to this point, the challenges of running this operating system on this type of hardware should 
+            have been made apparent. Under the guidance of Steve Jobs, Apple's ecosystem has ‘end-to-end’ control (1). 
+            This inhibits hobbyists, such as the team over at Asahi, to express their creativity. As many hobbyists have come 
+            to find out though, cracking this end-to-end control is part of the fun. From jailbreaking iPhones to installing a 
+            completely separate operating system not intended for the device, it seems as if Developers and Hardware hobbyists 
+            enjoy the challenge and the prestige that comes from using Apple’s hardware in unintended ways. Thus, Asahi Linux brings a lot to the
+            table as few believed a Linux port of this degree was even possible on a Mac device without going through Apple directly as Apple Silicon
+            has no documentation and thus the the Apple GPU architecture had to be completely reverse engineered. To highlight the power of 
+            Apple’s hardware and the versatility of Linux, the remainder of this article will be dedicated to the installation of Asahi 
+            Linux, the hurdles of the process, and the experiences of myself using the alternative OS and the experiences of others. 
+        </p>
+    </div>
+    <br>
     <div class="block">
         <h3>Preface</h3>
         <p>
@@ -180,21 +198,23 @@
             As I had previously mentioned, I would like to include the experiences of another individuals view to gain a better perspective on the project. The following is an account from 
             a friend of mine who also attends Texas A&M University.
         </p>
-        <p>
-            <i>I am Eddie Phillips, an Electrical Engineering major at Texas A&M.  While looking for a platform that would execute ARMv8 assembly natively on my Mac M1, 
-            I came across the Asahi Linux Project and quickly adopted it. I was initially very impressed by the functionality the developers could get by reverse engineering the 
-            T1, Broadcom, and M1 chips of the Macbook.
-            <br><br>
-            The Asahi community is extremely welcoming to new developers, as I even had the opportunity to chat with the lead developer, Marcan.  
-            Asahi Linux is by no means a project focused solely on bringing arch to the Mx chips either.  The developers created a hypervisor for booting any Linux distribution on the Mac.  
-            <br><br>
-            Overall, I am grateful for the Asahi Linux project.  I hope future updates will bring more functionality and more adoption of Macs among the development community.
-            <br><br>
-            From a review in the British technology newsletter website known as The Register: "Asahi ran surprisingly well for a software still in alpha.” 
-            <br><br>
-            From a review from technology news website Ars Technica: “I was impressed by the amount of hardware that was already supported early in the project lifecycle.”
-            </i>
-        </p>
+        <div class="bblock">
+            <p>
+                <i>I am Eddie Phillips, an Electrical Engineering major at Texas A&M.  While looking for a platform that would execute ARMv8 assembly natively on my Mac M1, 
+                I came across the Asahi Linux Project and quickly adopted it. I was initially very impressed by the functionality the developers could get by reverse engineering the 
+                T1, Broadcom, and M1 chips of the Macbook.
+                <br><br>
+                The Asahi community is extremely welcoming to new developers, as I even had the opportunity to chat with the lead developer, Marcan.  
+                Asahi Linux is by no means a project focused solely on bringing arch to the Mx chips either.  The developers created a hypervisor for booting any Linux distribution on the Mac.  
+                <br><br>
+                Overall, I am grateful for the Asahi Linux project.  I hope future updates will bring more functionality and more adoption of Macs among the development community.
+                <br><br>
+                From a review in the British technology newsletter website known as The Register: "Asahi ran surprisingly well for a software still in alpha.” 
+                <br><br>
+                From a review from technology news website Ars Technica: “I was impressed by the amount of hardware that was already supported early in the project lifecycle.”
+                </i>
+            </p>
+        </div>
     </div>
 
 </html>
