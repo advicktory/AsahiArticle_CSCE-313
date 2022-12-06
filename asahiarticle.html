@@ -4,8 +4,19 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <title>Asahi Linux Article</title>
     </head>
-    <!-- Cal's Part -->
+    <!-- Caleb's Part -->
+    <h2>About Asahi Linux</h2>
+    <p>
+        Asahi Linux is a project created for the Linux operating system to be ported on Apple Silicon Macs. The project was started in December of 2020 by Hector Martin after Apple announced their transition to Apple custom Silicon in their computers. The name Asahi translates to “rising sun” in Japanese, and is also the name of the same variety of apple that gave Macintosh its name. Asahi is considered a community, and is an open source project available for anybody to make contributions. The main major contributors for the project include Hector Martin as the project lead, Alyssa Rosenzweig as the GPU lead, Asahi Lina as the GPU kernel specialist, Dougall Johnson as the instruction set architecture specialist, Sven Peter as a Linux support developer, and Mark Kettenis as a OpenBSD developer.
+    </p>
+    <p>
+        Martin secured funding of $4,000 per month after Linux founder Linus Torvalds showed interest in using an Apple M1 mac if it was able to run with his operating system. The project’s first goal targeted the M1 Mac Mini. The process to boot the Linux kernel on an Apple Silicon processor proved to be a challenge, as the developers on the project needed to figure out how Apple code functioned during the boot process. This required working with Linux kernel developers, which included constantly submitting pull requests to Linux kernel devs in order to keep development in sync. This process took nearly a year, and the final result was a fully documented explanation of the boot process, which was published to Asahi’s Github repository. Addressing concerns of legality and Apple’s allowingness, Asahi has stated no code has been taken from macOS to develop Linux support. Apple actually has a built-in feature for Apple Silicon Macs that allows booting unsigned or custom kernels without any jailbreaking. Unlike Apple’s mobile device operating system, they have no plans on locking the OS, which would otherwise require a jailbreak.
+    </p>
+    <p>    
+        The first alpha version of an installer for Asahi Linux was released early this year, on March 18, 2022. This experimental edition of the installer offers options of an Arch Linux ARM-based environment or a simple UEFI environment for installing OpenBSD or other Linux distributions with Apple Silicon support. The latter option enables users to install an operating system via a bootable USB drive, but does not support Microsoft Windows as it would require work in dissecting Windows kernel. While full support for every Apple Silicon Mac product is not expected for a while, Asahi released an update in July 2022 that added support for Apple’s M1 Ultra, Mac Studio, and M2 Macbook Pro. Other than that, installation requires 53 gigabytes of free space and macOS 12.3 or later. The complete process on how to install this release on your Apple Silicon Mac device can be found later in this article. 
+    </p>
 
     <!-- Jack's Part-->
 
@@ -177,7 +188,12 @@
             The Asahi community is extremely welcoming to new developers, as I even had the opportunity to chat with the lead developer, Marcan.  
             Asahi Linux is by no means a project focused solely on bringing arch to the Mx chips either.  The developers created a hypervisor for booting any Linux distribution on the Mac.  
             <br><br>
-            Overall, I am grateful for the Asahi Linux project.  I hope future updates will bring more functionality and more adoption of Macs among the development community.</i>
+            Overall, I am grateful for the Asahi Linux project.  I hope future updates will bring more functionality and more adoption of Macs among the development community.
+            <br><br>
+            From a review in the British technology newsletter website known as The Register: "Asahi ran surprisingly well for a software still in alpha.” 
+            <br><br>
+            From a review from technology news website Ars Technica: “I was impressed by the amount of hardware that was already supported early in the project lifecycle.”
+            </i>
         </p>
     </div>
 
