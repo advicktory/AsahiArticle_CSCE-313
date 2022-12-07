@@ -47,7 +47,6 @@ img {
 
 .bblock p {
     font-size: medium;
-    
     margin: auto;
     width: 85%;
     padding: 5px 5px 5px 5px;
@@ -57,10 +56,22 @@ img {
     width:80%;
     height:auto;
     margin:auto;
-    border: 25px solid #333;
+    border: 15px solid #333;
     box-shadow: 8px 8px 5px #444;
-    padding: 24px 36px;
+    padding: 12px 18px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+
+.block h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: x-large;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border:12px solid rgb(96, 96, 96);
+    background-image: linear-gradient(180deg, #ec4d4dfd, #ba181b);
+    /*background-image: rgb(192, 65, 90);*/
 }
 
 .block p {
