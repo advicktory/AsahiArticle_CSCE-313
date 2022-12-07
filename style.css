@@ -1,6 +1,12 @@
 /*Is this a comment?*/
+h1 {
+    color: maroon;
+    text-align: center;
+    font-size: xx-large;
+}
+
 h2 {
-    color: blueviolet;
+    color: red;
     text-align: center;
     font-size: x-large;
 }
